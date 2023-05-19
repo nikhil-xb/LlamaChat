@@ -44,7 +44,7 @@ with open('prompts.txt') as file:
 file.close()
 
 prompt= PromptTemplate(template= PromptTemp, input_variables= ['chat_history', 'question'], validate_template=True)
-memory= ConversationBufferMemory(memory_key='chat_  `1history', return_messages=True)
+memory= ConversationBufferMemory(memory_key='chat_history', return_messages=True)
 
 llm_chain= ConversationalRetrievalChain.from_llm(llm= llm, retriever= retriever, condense_question_prompt= prompt,                                                  chain_type="stuff", memory=memory,get_chat_history= get_chat_history)
 while True:
