@@ -1,0 +1,7 @@
+langchain
+chromdb
+os
+llama-cpp-python
+huggingface-hub
+pyllamacpp
+python-dotenv
