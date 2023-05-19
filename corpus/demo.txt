@@ -1,0 +1,7 @@
+It is just a demo file in your corpus.
+It can contain various type of files that will teach your AI more about your personality. 
+The folder is safe and all the data you give to your model will remain private. 
+The model will create a vector space for your corpus that can be used for effective quering &
+storage.
+
+Currently, the model supports .txt, .csv & .pdf format only. You can use langchain for adding more formats.
