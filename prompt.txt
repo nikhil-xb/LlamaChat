@@ -1,0 +1,16 @@
+Write your prompt here, about what are your expectation from the language model. It is essential 
+and an important aspect of any LLMs. This makes your llm behave as you expect it to. Otherwise it 
+will behave in bad manner.
+
+Do not forget to add this kind of format:
+
+---
+ConversationHistory: {chat_history}
+---
+User-> {question}
+
+YouGPT-> 
+
+Since you are giving chat_history also to your model in the memory function it becomes essential
+
+To get an inspiration for how to write a prompt, refer to my other repo https://github.com/nikhil-xb/YouGPT/blob/master/src/prompts.txt
