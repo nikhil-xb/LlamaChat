@@ -113,10 +113,10 @@ def main(clean_db: str):
     
     if os.path.exists(db.persist_directory):
         if clean_db.lower() == "y" or (clean_db == "n" and session.prompt("\nDelete current database?(Y/N)").lower() == "y"):
-            print("<r>Deleting db...</r>")
+            print("Deleting db...")
             shutil.rmtree(db.persist_directory)
         elif clean_db.lower() == "n":
-            print("<r>Adding to db...</r>")
+            print("Adding to db...")
     db.create()
 if __name__=="__main__":
     clean_db= sys.argv[1] if len(sys.argv)> 1 else "n"
