@@ -1,8 +1,9 @@
 langchain
-chromdb
+qdrant-client
 os
 llama-cpp-python
 huggingface-hub
 pyllamacpp
 python-dotenv
 pygpt4all
+prompt-toolkit
